@@ -1,0 +1,50 @@
+
+.animated-footer {
+    position: relative;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    animation: fadeInUp 1.2s ease-in-out;
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #fafafa15;
+  }
+  
+  .animated-text {
+    animation: textGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .footer-tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #b0bec5;
+    animation: fadeIn 2s ease-in;
+  }
+  
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes textGlow {
+    0% {
+      text-shadow: 0 0 5px #4fc3f7, 0 0 10px #4fc3f7;
+    }
+    100% {
+      text-shadow: 0 0 15px #81d4fa, 0 0 30px #29b5f631;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

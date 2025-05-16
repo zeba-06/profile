@@ -1,0 +1,41 @@
+
+.skills-slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .skills-track {
+    display: flex;
+    width: 200%;
+    animation: scrollSkills 18s linear infinite;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    min-width: 150px;
+    flex-shrink: 0;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  @keyframes scrollSkills {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

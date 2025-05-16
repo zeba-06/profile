@@ -1,0 +1,35 @@
+.custom-navbar {
+    background: rgba(15, 12, 41, 0.9); 
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    padding: 0.8rem 0;
+  }
+  
+  .nav-link-custom {
+    color: #f8fafc !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0 1rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link-custom::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent white */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link-custom:hover::after {
+    width: 100%;
+  }
+  
+  
